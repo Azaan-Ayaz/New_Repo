@@ -1,8 +1,26 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useNavigate } from 'react-router-dom'
+import Layout from '../../../components/Layout'
+
 
 const EngineeringProducts = () => {
+
+
+  const navigate = useNavigate()
+
+  const eventHandler = () => {
+    navigate("/contact")
+  }
+
   return (
     <>
+    <Helmet>
+      <title>
+        Engineering Products - Techsol Solutions
+      </title>
+    </Helmet>
+    <Layout>
      <div className="flex flex-col gap-0 pb-8 bg-white max-md:flex-wrap">
       <img
         loading="lazy"
@@ -85,7 +103,14 @@ const EngineeringProducts = () => {
           className="gap-0 self-center w-full aspect-[3.33] max-md:flex-wrap max-md:max-w-full"
         />
       </div>
+      <div className="flex justify-center items-center p-8">
+          <button className="bg-custom1 text-white font-medium text-xl py-3 px-6 rounded-full hover:bg-red-900 transition duration-300"
+          onClick={eventHandler}>
+            Contact Us
+          </button>
+        </div>
     </div> 
+    </Layout>
     </>
   )
 }

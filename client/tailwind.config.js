@@ -11,7 +11,10 @@ export default {
       },
       colors:{
         custom1: "#8A181A",
-        custom2: "#A9A9A9"
+        custom2: "#A9A9A9",
+        color1: "#311B92",
+        color2: "#006064",
+        color3: "#F8BBDO"
       }
     },
   },

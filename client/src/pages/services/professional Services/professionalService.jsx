@@ -1,16 +1,30 @@
 import React from 'react'
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
+import Layout from '../../../components/Layout';
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const ProfessionalServices = () => {
+
+  const navigate = useNavigate()
+  const eventHandler = () => {
+    navigate("/contact")
+  }
+
+
   return (
     <>
+    <Helmet>
+      <title>Professional Services - Techsol Solutions</title>
+    </Helmet>
+    <Layout className="z-40">
     <div className='font-poppins'>
       <div className="flex flex-col items-center">
       <div className="relative">
   <img
     loading="lazy"
     srcSet="/professionalServices/image.png"
-    className="w-full mix-blend-luminosity aspect-[2.63] max-md:max-w-full"
+    className="w-full z-0  md:w-full max-md:max-w-full"
     alt="Professional Services"
   />
   <div className="absolute top-52 left-0 w-full text-center max-md:top-20 max-md:text-4xl text-white font-semibold text-7xl">
@@ -36,13 +50,13 @@ const ProfessionalServices = () => {
                 <div className="self-center text-2xl max-md:text-[25px] max-md:w-[400px] font-semibold leading-6 text-center uppercase w-[300px]">
                   SEO (Search Engine Optimization)
                 </div>
-                <div className="mt-4 font-normal max-md:text-[18px] leading-5">
+                <div className="mt-8 font-normal text-lg max-md:text-[24px] leading-6">
                   We provide expert SEO services to enhance your online
                   visibility and drive organic traffic. Our offerings include
                   keyword research, on-page optimization, off-page strategies,
                   technical audits, and performance tracking.
                 </div>
-                <div className="flex gap-5 mt-8 font-medium uppercase leading-[150%] max-md:pr-5">
+                <div className="flex gap-5 mt-[62px] font-medium uppercase leading-[150%] max-md:pr-5">
                 <div className="justify-center p-2 bg-white text-custom1">
               <button className='cursor-pointer text-lg'>Learn More</button>
             </div>
@@ -67,14 +81,14 @@ const ProfessionalServices = () => {
                 <div className="self-center text-2xl max-md:text-[25px] max-md:w-[600px] font-semibold leading-6 text-center uppercase w-[300px]">
                   EMAIL MARKETING
                 </div>
-                <div className="mt-6 font-normal max-md:text-[18px] leading-5">
+                <div className="mt-10 font-normal text-lg max-md:text-[18px] leading-6">
                   Unlock the potential of email marketing with our services.
                   From crafting compelling campaigns to analyzing performance,
                   we help you reach and engage your audience effectively.
                 </div>
-                <div className="flex gap-5 justify-between mt-7 font-medium uppercase leading-[150%] max-md:pr-5">
+                <div className="flex gap-5 justify-between mt-[57px] font-medium uppercase leading-[150%] max-md:pr-5">
                 <div className="justify-center p-2 bg-white text-custom1">
-              <button className='cursor-pointer text-lg'>Learn More</button>
+              <button className='cursor-pointer text-lg' onClick={eventHandler}>Learn More</button>
             </div>
                   {/* <img
                     loading="lazy"
@@ -98,7 +112,7 @@ const ProfessionalServices = () => {
                 <div className="self-center text-2xl max-md:text-[25px] max-md:w-[600px] font-semibold leading-6 text-center uppercase w-[300px]">
                 SOCIAL MEDIA MARKETING
                 </div>
-                <div className="mt-6 font-normal max-md:text-[18px] leading-5">
+                <div className="mt-6 font-normal text-lg max-md:text-[18px] leading-6">
                 Discover our social media marketing services for enhanced
                   brand visibility. We offer content creation, profile
                   management, targeted ads, and strategy optimization across
@@ -106,7 +120,7 @@ const ProfessionalServices = () => {
                 </div>
                 <div className="flex gap-5 justify-between mt-[50px] font-medium uppercase leading-[150%] max-md:pr-5">
                 <div className="justify-center p-2 bg-white text-custom1">
-              <button className='cursor-pointer text-lg'>Learn More</button>
+              <button className='cursor-pointer text-lg' onClick={eventHandler}>Learn More</button>
             </div>
                   {/* <img
                     loading="lazy"
@@ -134,15 +148,15 @@ const ProfessionalServices = () => {
                 <div className="self-center text-2xl max-md:text-[25px] max-md:w-[600px] font-semibold leading-6 text-center uppercase w-[300px]">
                   CONTENT MARKETING
                 </div>
-                <div className="mt-6 font-normal max-md:text-[18px] leading-5">
+                <div className="mt-6 font-normal max-md:text-[18px] text-lg  leading-7">
                   Drive engagement and conversions with our content marketing
                   services. We create compelling content that resonates with
                   your audience, helping you build brand awareness and establish
                   thought leadership in your industry.
                 </div>
-                <div className="flex gap-5 justify-between mt-[70px] font-medium uppercase leading-[150%] max-md:pr-5">
+                <div className="flex gap-5 justify-between mt-[40px] font-medium uppercase leading-[150%] max-md:pr-5">
                 <div className="justify-center p-2 bg-white text-custom1">
-              <button className='cursor-pointer text-lg'>Learn More</button>
+              <button className='cursor-pointer text-lg' onClick={eventHandler}>Learn More</button>
             </div>
                   {/* <img
                     loading="lazy"
@@ -164,15 +178,15 @@ const ProfessionalServices = () => {
                 <div className="self-center text-2xl max-md:text-[25px] max-md:w-[600px] font-semibold leading-6 text-center uppercase w-[300px]">
                   ADVERTISMENT
                 </div>
-                <div className="mt-6 font-normal max-md:text-[18px] leading-5">
+                <div className="mt-6 font-normal text-lg max-md:text-[18px] leading-7">
                   We provide expert digital advertising services to appraise
                   Online Brand Visibility, Drive Traffic, and engage a higher
                   ROI. Our offerings include Facebook Ads, Google Ads, Social
                   Media Ads, technical audits, and performance tracking.
                 </div>
-                <div className="flex gap-5 justify-between mt-[90px] font-medium uppercase leading-[150%] max-md:pr-5">
+                <div className="flex gap-5 justify-between mt-[40px] font-medium uppercase leading-[150%] max-md:pr-5">
                 <div className="justify-center p-2 bg-white text-custom1">
-              <button className='cursor-pointer text-lg'>Learn More</button>
+              <button className='cursor-pointer text-lg' onClick={eventHandler}>Learn More</button>
             </div>
                   {/* <img
                     loading="lazy"
@@ -197,7 +211,7 @@ const ProfessionalServices = () => {
                 <div className="self-center text-2xl max-md:text-[25px] max-md:w-[600px] font-semibold leading-6 text-center uppercase w-[300px]">
                   MARKETING CONSULTANCY
                 </div>
-                <div className="mt-6 font-normal max-md:text-[18px] leading-5">
+                <div className="mt-6 font-normal text-lg max-md:text-[18px] leading-7">
                   Gain valuable insights and strategies with our marketing
                   consultancy services. We offer expert guidance tailored to
                   your business goals, helping you optimize campaigns and
@@ -205,7 +219,7 @@ const ProfessionalServices = () => {
                 </div>
                 <div className="flex gap-5 justify-between mt-[45px] max-md:mt-10 font-medium uppercase leading-[150%] max-md:pr-5">
                 <div className="justify-center p-2 bg-white text-custom1">
-              <button className='cursor-pointer text-lg'>Learn More</button>
+              <button className='cursor-pointer text-lg' onClick={eventHandler}>Learn More</button>
             </div>
                   {/* <img
                     loading="lazy"
@@ -228,7 +242,7 @@ const ProfessionalServices = () => {
           MANAGED SERVICES
         </div>
         <div className="flex flex-col px-3.5 mt-3 text-sm">
-          <div className="font-normal max-md:text-[18px] leading-5">
+          <div className="font-normal text-lg  max-md:text-[18px] leading-7">
             Techsol Solutions has a Service Oriented Culture and we believe in
             Customer Focused policies, therefore, Techsol can be your right
             choice for your Process Out-Sourcing, Managed Services, and Service
@@ -237,7 +251,7 @@ const ProfessionalServices = () => {
           </div>
           <div className="flex gap-5 mt-1.5 font-normal  uppercase leading-[150%] max-md:pr-5">
             <div className="justify-center p-2 bg-white text-custom1">
-              <button className='cursor-pointer text-lg'>Learn More</button>
+              <button className='cursor-pointer text-lg' onClick={eventHandler}>Learn More</button>
             </div>
             {/* <img
               loading="lazy"
@@ -307,6 +321,7 @@ const ProfessionalServices = () => {
       </div>
     </div>
     </div>
+    </Layout>
     </>
   )
 }

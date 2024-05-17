@@ -20,7 +20,7 @@ const Router = () => {
         <Route path='/software_license' element={<Software/>}/>
         <Route path='/it-products' element={<ItProduct/>}/>
         <Route path='/professional-services' element={<ProfessionalServices/>}/>
-        <Route path='/engineering-products/solutions' Component={EngineeringProducts}/>
+        <Route path='/engineering-products-and-solutions' Component={EngineeringProducts}/>
       </Routes>
     </div>
   )
