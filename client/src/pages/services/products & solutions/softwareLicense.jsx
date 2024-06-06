@@ -46,7 +46,7 @@ const navigate = useNavigate()
             <div className="gap-0 mt-8 max-md:mt-4 text-[22px] leading-8 max-md:text-lg max-md:tracking-tighter max-md:flex-wrap max-md:max-w-full">
               Techsol Solutions acts as your go-to place for all your database and
               operating system needs. We offer licensing and implementation for
-              industry-leading solutions like Oracle, ensuring optimal data
+              industry-leading solutions like <span className='font-bold'>Oracle</span> , ensuring optimal data
               management. Additionally, we provide Microsoft Windows operating
               system, Microsoft Office Suite and Server products, equipping your
               workforce with the essential tools for productivity. Our team of

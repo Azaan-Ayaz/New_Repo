@@ -7,7 +7,7 @@ const Contact = () => {
 
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(10, 500);
   }, []);
 
   const [name, setName] = useState("")
