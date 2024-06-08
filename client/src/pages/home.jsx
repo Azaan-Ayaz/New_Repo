@@ -25,15 +25,15 @@ const Home = () => {
       <Layout>
         <div className='font-poppins'>
           <div className="flex flex-col ">
-            <div className="flex flex-col justify-center items-start px-16 py-20 w-full text-6xl font-semibold bg-black max-md:px-5 max-md:max-w-full max-md:text-4xl">
-              <div className="flex flex-col md:mt-20 md:mb-20 md:ml-28 max-md:my-0 max-md:max-w-full max-md:text-4xl">
-                <div className="text-8xl bg-clip-text max-md:max-w-full max-md:text-4xl font-semibold text-transparent bg-gradient-to-r from-custom1 to-custom3 ">
+            <div className="flex flex-col justify-center items-start md:px-10 px-16 py-20 max-md:py-20 w-full text-6xl font-semibold bg-black max-md:px-5 max-md:max-w-full max-md:text-4xl">
+              <div className="flex flex-col md:mt-20 md:mb-20 md:ml-10 max-md:my-0 max-md:max-w-full max-md:text-4xl">
+                <div className="text-8xl bg-clip-text max-md:max-w-full max-md:text-5xl font-semibold text-transparent bg-gradient-to-r from-custom1 to-custom3 ">
                   GREETINGS,
                 </div>
-                <div className="mt-4 text-white max-md:max-w-full max-md:text-4xl">
+                <div className="mt-4 text-white max-md:mt-2 max-md:max-w-full max-md:text-4xl">
                   WE’RE
                 </div>
-                <div className="mt-4 text-white max-md:max-w-full max-md:text-4xl">
+                <div className="mt-4 text-white max-md:mt-2 max-md:max-w-full max-md:text-4xl">
                   TECHSOL SOLUTIONS
                 </div>
               </div>
@@ -49,7 +49,7 @@ const Home = () => {
                       <div className="mt-2 text-6xl bg-clip-text max-md:max-w-full max-md:text-4xl text-transparent bg-gradient-to-br from-custom4 via-custom5 to-custom6">
                         Techsol Solutions
                       </div>
-                      <div className="mt-2 text-[22px] max-md:text-lg font-normal max-md:max-w-full">
+                      <div className="mt-2 md:mb-10 text-[22px] max-md:text-lg font-normal max-md:max-w-full">
                         Techsol Solutions is the go-to destination for cutting-edge IT
                         solutions. Specializing in everything from digital marketing
                         to engineering products, we boast a wide array of services
@@ -402,7 +402,7 @@ const Home = () => {
                     className="w-60 h-60 md:object-contain max-md:w-2/5 max-md:h-2/5"
                   />
                 </div>
-                <div className="flex flex-row max-md:flex-wrap gap-16cd max-md:gap-10 justify-center mt-0">
+                <div className="flex flex-row max-md:flex-wrap gap-16 max-md:gap-10 justify-center mt-0">
                   <img
                     loading="lazy"
                     srcSet="/home/p10.png"

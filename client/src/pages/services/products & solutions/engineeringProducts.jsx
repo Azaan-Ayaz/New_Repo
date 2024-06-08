@@ -10,7 +10,7 @@ const EngineeringProducts = () => {
   const navigate = useNavigate()
 
   const eventHandler = () => {
-    navigate("/contact")
+    navigate("/contact-us")
   }
 
   return (

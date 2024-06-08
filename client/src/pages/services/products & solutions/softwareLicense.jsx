@@ -8,7 +8,7 @@ const Software = () => {
 const navigate = useNavigate()
 
   const eventHandler = () => {
-    navigate("/contact")
+    navigate("/contact-us")
   }
 
 
@@ -29,7 +29,7 @@ const navigate = useNavigate()
           srcSet="/software_license/image.png"
           className="gap-0 w-full aspect-[2.13] fill-[url(<path-to-image>)_lightgray_53.356px_-252.062px_/_95.191%_140.316%_no-repeat,#9E696A] max-md:flex-wrap max-md:max-w-full"
         />
-        <div className="justify-center text-center max-md:py-10 pt-20 pb-20 w-full text-7xl font-bold leading-7 text-white bg-red-900 max-md:flex-wrap max-md:px-5 max-md:max-w-full max-md:text-4xl max-md:font-semibold">
+        <div className="justify-center text-center max-md:py-10 pt-20 pb-20 md:leading-[70px] w-full text-7xl font-bold leading-7 text-white bg-red-900 max-md:flex-wrap max-md:px-5 max-md:max-w-full max-md:text-4xl max-md:font-semibold">
           Software/ Licenses Solutions
         </div>
         <div className="flex gap-0 justify-center items-center px-16 py-11 w-full bg-gray-200 max-md:flex-wrap max-md:px-5 max-md:max-w-full">

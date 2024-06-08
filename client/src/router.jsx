@@ -1,8 +1,8 @@
 import React from 'react'
 import {Routes, Route} from "react-router-dom"
 import Home from './pages/home'
-import About from './pages/about'
-import Contact from './pages/contact'
+// import About from './pages/about'
+// import Contact from './pages/contact'
 import { EngineeringProducts } from './pages/services/products & solutions/engineeringProducts'
 import Software from './pages/services/products & solutions/softwareLicense'
 import ItProduct from './pages/services/products & solutions/itProduct'
@@ -10,6 +10,8 @@ import ItProduct from './pages/services/products & solutions/itProduct'
 import ProfessionalServices from './pages/services/professional Services/professionalService'
 import TechnologyAugmentation from './pages/services/oracle/technologyAgmentation'
 import TechnologyProduct from './pages/services/oracle/technologyProduct'
+import AboutUs from './pages/aboutUs'
+import ContactUs from './pages/contactUs'
 // import {EngineeringProducts} from "./pages/services/products & solutions"
 
 const Router = () => {
@@ -17,8 +19,10 @@ const Router = () => {
     <div>
       <Routes>
         <Route path='/' element={<Home/>}  />
-        <Route path='/about' element={<About/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        {/* <Route path='/about' element={<About/>}/> */}
+        {/* <Route path='/contact' element={<Contact/>}/> */}
+        <Route path='/contact-us' element={<ContactUs/>}/>
+        <Route path='/about-us' element={<AboutUs/>}/>
         <Route path='/software_license' element={<Software/>}/>
         <Route path='/it-products' element={<ItProduct/>}/>
         <Route path='/professional-services' element={<ProfessionalServices/>}/>

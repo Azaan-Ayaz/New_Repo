@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { Helmet } from 'react-helmet';
 
-const About = () => {
+const AboutUs = () => {
   return (
     <>
     <Helmet>
@@ -188,4 +188,4 @@ const About = () => {
   );
 };
 
-export default About
+export default AboutUs

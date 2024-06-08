@@ -3,7 +3,7 @@ import axios from "axios"
 import Layout from '../components/Layout';
 import {Helmet} from "react-helmet"
 
-const Contact = () => {
+const ContactUs = () => {
 
 
   useEffect(() => {
@@ -257,4 +257,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactUs

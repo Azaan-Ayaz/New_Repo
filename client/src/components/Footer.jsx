@@ -48,9 +48,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="flex justify-center items-center mt-28 max-md:mt-6 ">
-  <button class="px-6 py-3 max-md:py-1 max-md:px-2 max-md:text-lg text-xl text-center text-white bg-red-700 hover:bg-red-800 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg "
-  onClick={() => eventHandler("/contact")}>
+        <div className="flex justify-center items-center mt-28 max-md:mt-6 ">
+  <button className="px-6 py-3 max-md:py-1 max-md:px-2 max-md:text-lg text-xl text-center text-white bg-red-700 hover:bg-red-800 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg "
+  onClick={() => eventHandler("/contact-us")}>
     Contact Us
   </button>
 </div>
