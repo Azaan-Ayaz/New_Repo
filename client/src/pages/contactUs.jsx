@@ -42,7 +42,7 @@ const ContactUs = () => {
       <div className="flex flex-col font-poppins bg-white">
         <img
           loading="lazy"
-          srcSet="/contact/first.png"
+          srcSet="/contact/contact.jpg"
           alt='Techsol Solutions'
           className="w-full aspect-[0.33] max-md:max-w-full max-md:max-h-[200px] md:max-h-[800px]"
 

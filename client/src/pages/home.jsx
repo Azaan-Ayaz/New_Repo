@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/Layout'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
@@ -6,6 +6,8 @@ import { Helmet } from 'react-helmet'
 
 const Home = () => {
 
+
+useEffect(() => window.scrollTo(0,0), [])
 
   const navigate = useNavigate()
 
@@ -208,7 +210,7 @@ const Home = () => {
                   effective results.
                 </div>
                 <button className="flex justify-center items-center px-16 py-9 mt-16 mb-1.5 text-4xl font-semibold bg-black border border-white border-solid rounded-[50px] max-md:px-5 max-md:mt-10 max-md:max-w-full"
-                  onClick={() => eventHandler("/contact")}>
+                  onClick={() => eventHandler("/contact-us")}>
                   <div className="bg-clip-text max-md:max-w-full max-md:text-xl text-transparent bg-gradient-to-br from-custom4 via-custom5 to-custom6">
                     GET FREE CONSULTANCY NOW
                   </div>

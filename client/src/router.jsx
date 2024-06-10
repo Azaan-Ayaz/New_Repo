@@ -1,10 +1,10 @@
 import React from 'react'
 import {Routes, Route} from "react-router-dom"
-import Home from './pages/home'
+// import Home from './pages/home'
 // import About from './pages/about'
 // import Contact from './pages/contact'
 import { EngineeringProducts } from './pages/services/products & solutions/engineeringProducts'
-import Software from './pages/services/products & solutions/softwareLicense'
+// import Software from './pages/services/products & solutions/softwareLicense'
 import ItProduct from './pages/services/products & solutions/itProduct'
 // import MarketingServices from './pages/services/professional Services/marketingServices'
 import ProfessionalServices from './pages/services/professional Services/professionalService'
@@ -12,18 +12,22 @@ import TechnologyAugmentation from './pages/services/oracle/technologyAgmentatio
 import TechnologyProduct from './pages/services/oracle/technologyProduct'
 import AboutUs from './pages/aboutUs'
 import ContactUs from './pages/contactUs'
+import SoftwareLic from './pages/services/products & solutions/SoftwareLicenses'
+import Landing from './pages/Landing'
 // import {EngineeringProducts} from "./pages/services/products & solutions"
 
 const Router = () => {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Home/>}  />
+        {/* <Route path='/' element={<Home/>}  /> */}
+        <Route path='/' element={<Landing/>}  />
         {/* <Route path='/about' element={<About/>}/> */}
         {/* <Route path='/contact' element={<Contact/>}/> */}
         <Route path='/contact-us' element={<ContactUs/>}/>
         <Route path='/about-us' element={<AboutUs/>}/>
-        <Route path='/software_license' element={<Software/>}/>
+        {/* <Route path='/software_license' element={<Software/>}/> */}
+        <Route path='/software_license' element={<SoftwareLic/>}/>
         <Route path='/it-products' element={<ItProduct/>}/>
         <Route path='/professional-services' element={<ProfessionalServices/>}/>
         <Route path='/engineering-products-and-solutions' Component={EngineeringProducts}/>

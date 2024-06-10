@@ -1,13 +1,12 @@
+# Enable the Rewrite Engine
 RewriteEngine On
 RewriteBase /
 
-# Redirect all requests to index.html
+# Redirect all requests to index.html if the requested resource is not a file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /index.html [L]
 
-# Redirect www to non-www (optional)
+# Redirect www to non-www
 RewriteCond %{HTTP_HOST} ^www\.techsolsol\.com [NC]
 RewriteRule ^(.*)$ http://techsolsol.com/$1 [L,R=301]
-
-

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import Layout from '../../../components/Layout'
@@ -6,6 +6,8 @@ import Layout from '../../../components/Layout'
 const ItProduct = () => {
 
   const navigate = useNavigate()
+
+  useEffect(() => window.scrollTo(0,0), [])
 
   const eventHandler = () => {
     navigate("/contact-us")

@@ -1,17 +1,34 @@
-const express = require("express")
-const app = express()
-const dataBase = require("./Database/dataBase")
-const cors = require("cors")
-const morgan = require("morgan")
-const router = require("./Routes/contactRoute")
+const express = require("express");
+const path = require("path");
+const dataBase = require("./Database/dataBase");
+const cors = require("cors");
+const morgan = require("morgan");
+const router = require("./Routes/contactRoute");
+const dotenv = require("dotenv");
+const colors = require("colors");
 
-app.use(express.json())
-app.use(cors())
-app.use(morgan('dev'))
+// Load environment variables from .env file
+dotenv.config();
 
-/* Route */
-app.use("/",router)
+const app = express();
+const PORT = process.env.PORT || 8000 || process.env.zREMOTE_SERVER_API;
 
-dataBase()
+app.use(express.json());
+app.use(cors());
+app.use(morgan('dev'));
 
-module.exports = app
+// API routes
+app.use("/api", router);
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "client/build")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`.bgGreen.black);
+});
+
+dataBase();

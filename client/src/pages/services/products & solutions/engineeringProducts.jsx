@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { useNavigate } from 'react-router-dom'
 import Layout from '../../../components/Layout'
@@ -6,7 +6,7 @@ import Layout from '../../../components/Layout'
 
 const EngineeringProducts = () => {
 
-
+  useEffect(() => window.scrollTo(0,0), [])
   const navigate = useNavigate()
 
   const eventHandler = () => {

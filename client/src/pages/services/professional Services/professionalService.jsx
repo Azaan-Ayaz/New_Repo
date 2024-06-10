@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import { FaArrowRight } from "react-icons/fa";
 import Layout from '../../../components/Layout';
 import { useNavigate } from 'react-router-dom';
@@ -8,9 +8,10 @@ const ProfessionalServices = () => {
 
   const navigate = useNavigate()
   const eventHandler = () => {
-    navigate("/contact")
+    navigate("/contact-us")
   }
 
+  useEffect(() => window.scrollTo(0,0), [])
 
   return (
     <>

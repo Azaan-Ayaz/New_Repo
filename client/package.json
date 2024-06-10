@@ -1,9 +1,13 @@
 {
-  "name": "client",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "homepage": "techsolsol.com",
+  
+    "name": "client",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "homepage": "https://techsolsol.com",
+    "proxy": "https://techsolapi.techsolsol.com",
+  
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",

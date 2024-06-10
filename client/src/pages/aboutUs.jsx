@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import { Helmet } from 'react-helmet';
 
 const AboutUs = () => {
+
+  useEffect(() => window.scrollTo(0,0), [])
+
   return (
     <>
     <Helmet>
